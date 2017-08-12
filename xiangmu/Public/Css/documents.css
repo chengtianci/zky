@@ -1,0 +1,48 @@
+#d_list{
+	text-decoration: none;
+}
+#d_list h2{
+	font-size: ;
+}
+ul{
+	list-style:none;
+}
+li a:link,li a:hover,li a:visited{
+	text-indent: 60px;
+	text-decoration: none;
+	display: block;
+	height: 30px;
+	font-size: 15px;
+	line-height: 30px;
+	width: 100%;
+	color: #65666D;
+	display: block;
+	width: 100%;
+	border-bottom: 1px dashed #eaeaea;
+	margin-top: 3px;
+	background: url(../Pic/lib.gif) no-repeat 45px 7px;
+}
+li a:hover{
+	transition: margin-left 1s;
+	-moz-transition: margin-left 1s;	/* Firefox 4 */
+	-webkit-transition: margin-left 1s;	/* Safari 和 Chrome */
+	-o-transition: margin-left 1s;	/* Opera */
+	margin-left: -10px;
+	color:green;
+}
+li a span{
+	display: block;
+	float: right;
+	margin-right: 9px;
+	text-align: right;
+}
+#subscpt{
+	display: block;
+	float: right;
+	margin-right: 9px;
+	text-align: right;
+	color:#65666D;
+}
+#main .contain{
+	box-shadow: 1px 0 3px #999;
+}

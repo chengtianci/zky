@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/public.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/aboutus.css" />
+    <style type="text/css">
+    </style>
+</head>
+<body>
+            
+        <div class="row">
+        当前登录管理员
+        <table > 
+        
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;<{$Think.session.name}> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <{$Think.session.username}> </td>
+                </tr>
+        </table>
+    
+    </div>
+    <div class="row">
+        <ul >
+            <h2>　植科院公共平台目前的组织管理结构如下</h2>
+            <volist name = "data0" id = "vo">
+                <li><img src="__PUBLIC__/Pic/na.png" alt="" />　<span class="na"><{$vo.position}>  <{$vo.name}></span></li>
+                <li><img src="__PUBLIC__/Pic/job.png" alt="" />　<span class="inf"><{$vo.responsibility}>    <{$vo.responsible}></span></li>
+                <li>
+                    <gt name = "vo.id" value = "$min">
+                        <span><a href="__URL__/higher/id/<{$vo.id}>" id='login'><button>上移</button></a></span>
+                    </gt>
+                    <lt name = "vo.id" value = "$max">
+                        <span><a href="__URL__/lower/id/<{$vo.id}>" id='login'><button>下移</button></a></span>
+                    </lt>
+                    <span><a href="__URL__/delete1/id/<{$vo.id}>" id='login'><button>删除</button></a></span>
+                    <span><a href="__URL__/update3/id/<{$vo.id}>" id='login'><button>修改</button></a></span>
+                </li>
+            </volist>
+        </ul> 
+        <br>
+    </div>
+    <form action = "__URL__/add1" method="post">
+        <div class="row">
+            <div class = "conInput">   
+            <span >信息1： </span>
+            <input type="text" name = "position" id = "position" value = "平台主任"/> <br>
+            <span >信息1详述：</span>
+            <input type="text" name = "name" id="name" value = "张三"/><br>
+            <span >信息2：</span>
+            <input type="text" name = "responsibility" id = "responsibility" value = "职责"/><br>
+            <span >信息2详述：</span>  
+            <textarea name="responsible" id = "responsible" value = "负责中心实验平台的管理与运营"></textarea>
+            <button>添加</button>
+        </div></div>
+    </form>
+    <div class="row">
+        <h2>其他信息修改</h2>
+        <ul >
+            <volist name = "data1" id = "vo">
+                <li class='add'><img src="__PUBLIC__/Pic/address.png" alt="" />　<{$vo.adress}>:<{$vo.addressname}></li>
+                <li class='add'><img src="__PUBLIC__/Pic/person.png" alt="" />　<{$vo.people}>：<{$vo.peoplename}></li>
+                <li class='add'><img src="__PUBLIC__/Pic/zip_code.png" alt="" />　<{$vo.post}>：<{$vo.postid}></li>
+            </volist>
+        </ul>
+    </div>
+    <form action = "__URL__/update2" method="post">
+        <div class="row">
+        <div class = "conInput">   
+            <span > 信息1： </span> <input type="text" name = "adress" id = "adress" value = "联系地址"/><br>
+            <span >信息1详述：</span>
+            <input type="text" name = "addressname" id = "addressname" value = "华中农业大学主楼东附楼二楼"/><br>
+            <span >信息2：</span>
+            <input type="text" name = "people" id = "people" value = "联系人"/><br>
+            <span >信息2详述：</span>
+            <input type="text" name = "peoplename" id = "peoplename" value = "李老师"/><br>    
+            <span >信息3：</span> 
+            <input type="text" name = "post" id = "post" value = "邮编"/><br>
+            <span >信息3详述：</span>
+            <input type="text" name = "postid" id = "postid" value="430070" />
+            <button>修改</button>
+        </div></div>
+    </form>
+</body>
+</html>

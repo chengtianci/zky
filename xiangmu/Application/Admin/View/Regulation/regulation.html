@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/public.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/conmmunication.css" />
+
+</head>
+<body>
+    <div class="title"><font color="#777777"><strong>用户名称：</strong></font>
+    <a href="__APP__/Admin/Index/studentdetail" id=""><{$Think.session.username}></a></div>
+    <table>
+                <tr>
+                    <td>上传文件</td>
+                </tr>
+                <tr>
+                    <td><form action="__URL__/do_show" enctype="multipart/form-data" method="post" ></td>
+                    <td id = "lalala"><input type="file" name = "file"></td> 
+                    <td></td>
+                    <td></td>            
+                    <div id="buttom" >
+                        <td><button type = "submit">添加</button></form></td>
+                </tr>
+    <table>
+    <table >
+                <volist name = "data" id = "vo" key ="k">
+                    <tr>
+                        <td><{$k}></td>
+                        <td><a href="__PUBLIC__/<{$vo.address}>" target = "_blank"><{$vo.realname}></a></td>
+                        <td> <a href="__URL__/delete/id/<{$vo.id}>"><button type="submit">删除</button></a></td>
+                    </tr>
+                </volist>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><{$show}></td>
+                </tr>   
+    </table>
+</body>
+</html>

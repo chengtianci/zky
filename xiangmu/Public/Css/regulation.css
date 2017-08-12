@@ -1,0 +1,36 @@
+#main .contain{
+	box-shadow: 1px 0 3px #666;
+}
+tr td{
+	text-indent: 20px;
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 25px;
+	color: #65666D;
+	padding-left: 20px;
+	width: 500px;
+}
+
+tr td a:link,tr td a:hover,tr td a:visited{
+	text-indent: 38px;
+	text-decoration: none;
+	display: block;
+	height: 35px;
+	font-size: 15px;
+	line-height: 35px;
+	width: 100%;
+	color: #65666D;
+	display: block;
+	width: 100%;
+	border-bottom: 1px dashed #eaeaea;
+	margin-top: 5px;
+	background: url(../Pic/lib.gif) no-repeat 22px 10px;
+}
+tr td a:hover{
+	transition: margin-left 1s;
+	-moz-transition: margin-left 1s;	/* Firefox 4 */
+	-webkit-transition: margin-left 1s;	/* Safari 和 Chrome */
+	-o-transition: margin-left 1s;	/* Opera */
+	margin-left: -10px;
+	color: green;
+}

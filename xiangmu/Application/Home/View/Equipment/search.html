@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html>
+	<head>
+		<title>仪器介绍</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="zh-CN" />
+		<link rel="shortcut icon" href="__ROOT__/logo.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="__PUBLIC__/Css/public.css" />
+		<link rel="stylesheet" type='text/css' href="__PUBLIC__/Css/equipiment.css" />
+		<script type="text/javascript" src="__PUBLIC__/Js/jquery-1.8.3.min.js"></script>
+		<script src="__PUBLIC__/Js/public.js"></script>
+		<script src="__PUBLIC__/Js/equipment.js"></script>
+		<script>
+			function f1(){
+				$.post("__APP__/Home/Login/do_login", {
+					username:$("#l_txtName").val(),
+					password:$("#l_txtPwd").val()
+				},function(text){
+					if(text=="pass"){
+						window.location.href="__APP__/Home/Index/main";
+					}else{
+						$("#suggest").html(text);
+					}
+				});
+			}
+			
+			function f2(){
+				$.post("__APP__/Admin/Login/do_login", {
+					username:$("#a_txtName").val(),
+					password:$("#a_txtPwd").val()
+				},function(text){
+					if(text=="pass"){
+						window.location.href="__APP__/Admin/Index/admin";
+					}else{
+						$("#suggest").html(text);
+					}
+				});
+			}
+
+			
+		</script>
+		<script src="__PUBLIC__/Js/main.js"></script>
+		
+	</head>
+	<body>
+		<!-- 这里是登录弹出窗口 -->
+		<div id="LoginBox">
+	        <div class="row1">
+	            登录<a href="javascript:void(0)" title="关闭窗口" class="close_btn" id="l_closeBtn">×</a>
+	        </div>
+	        <form>
+		        <span id="suggest"> &nbsp;</span>
+		        <div class="row">
+		            账号: 
+		            	<span >
+		                	<input class="inputBox" type="text" id="l_txtName" placeholder="账号" />
+		            	</span>
+		        </div>
+		        <div class="row">
+		            密码:
+		            <span >
+		                <input class="inputBox" type="password" id="l_txtPwd" placeholder="密码" />
+		           	</span>
+		        </div>
+		        <div class="row">
+		            	<a href="#" id="l_loginbtn" onclick="f1();">登录</a>
+	        	</div>
+	        </form>
+	    </div>
+		
+		<!-- 结束登陆弹出窗口 -->
+		<!-- 管理登录 -->
+		<div id="AdminBox">
+	        <div class="row1">
+	            后台登录<a href="javascript:void(0)" title="关闭窗口" class="close_btn" id="a_closeBtn">×</a>
+	        </div>
+	        <form>
+		        <span id="suggest"> &nbsp;</span>
+		        <div class="row">
+		            账号: 
+		            	<span >
+		                	<input class="inputBox" type="text" id="a_txtName" placeholder="管理员账号" />
+		            	</span>
+		        </div>
+		        <div class="row">
+		            密码:
+		            <span >
+		                <input class="inputBox" type="password" id="a_txtPwd" placeholder="密码" />
+		           	</span>
+		        </div>
+		        <div class="row">
+		            	<a href="#" id="a_loginbtn" onclick="f2();">登录</a>
+	        	</div>
+	        </form>
+	    </div>
+	     <!-- 结束管理登录窗口 -->
+		<div id='header'>
+			<div class="contain" >
+				<img src="__PUBLIC__/Pic/top.jpg" alt="" style="width:100%;" />
+			</div>
+		</div>
+		<div id='navi'>
+			<div class="contain">
+				<a href="__APP__/Home/Index/main" class="navi_a">首页</a>
+				<a href="__APP__/Home/Inform/news" class="navi_a">新闻通知</a>
+				<a href="__APP__/Home/Equipment/equipment" class="navi_a">仪器介绍</a>
+				<a href="__APP__/Home/Regulation/regulation" class="navi_a">规章制度</a>
+				<a href="__APP__/Home/File/document" class="navi_a">文档下载</a>
+				<a href="__APP__/Home/Message/conmunication" class="navi_a">讨论区</a>
+				<a href="__APP__/Home/Index/about_us" class="navi_a">关于我们</a>
+				<div id='na_log'>
+					<span>欢迎</span>
+					<eq name="Think.session.username" value=""><span><a href="#" id='login'>登录</a></span>
+					<else />	<SPAN><{$Think.session.username}></SPAN>
+						<a href="__APP__/Home/Login/login_out" style=''>退出</a>
+					</eq>
+				</div>
+			</div>
+		</div>
+		<div id='main'>
+			<div class="contain">
+				<div id="main_navi"><h2>仪器搜索</h2>
+				<div class="main_navi_header"><img src="__PUBLIC__/Pic/home.png" alt="" />当前位置：
+						<a href="__APP__/Home/Index/main">首页</a><span><span>>仪器介绍</span> </span><br /></div>
+				</div>
+					<div id="eqlist">
+					<div id="total">共有<{$count}>个仪器</div>
+					<volist name = "data" id = "vo">
+						<div class="eqsl">
+							<table >
+								<tr>
+									<td><a href="__URL__/showitems/id/<{$vo.id}>"><{$vo.ecname}></a></td>
+								</tr>
+							</table>
+							 <div id="shower">
+									<img src="__ROOT__/Uploads/<{$vo.imagicaddress}>" alt="无图片" />
+									<div class="equRig">
+									<span class="titl">设备编号：</span><span class="con"><{$vo.eid}></span><br />
+									<span class="titl">存放地点：<br /></span>
+									<span class="con"><{$vo.elocation}> </span><br />
+									<span class="titl">所属单位：</span><br /> 
+									<span class="con"><{$vo.eblong}> </span><br />
+									<span class="titl">状　　态：</span><span class="con"><{$vo.now}> </span><br />
+							</div></div>
+								<span class="condes"><{$vo.introduction}></span>
+						</div>
+					</volist>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="contain">
+			<div id="footer">
+			    <p>
+			    CopyRight©2016  植物科学技术学院
+			    <a href="#" id='admin' >管理</a>
+			    </p>
+			    <p>地址：华中农业大学主楼东附楼二楼   邮编：430070   </p>
+			    <p>
+			      技术支持：
+			      <a href="http://www.52feidian.com/">华中农业大学 沸点工作室</a>
+			    </p>
+			</div>
+		</div>
+	
+	</body>
+</html>

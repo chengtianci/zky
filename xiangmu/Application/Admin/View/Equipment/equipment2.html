@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/public.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/equipment.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/equipment_plus.css">
+</head>
+<style type="text/css">
+        body {
+            font-size: 20px;
+            padding-bottom: 40px;
+            background-color:#e9e7ef;
+        }
+        table{
+            margin:10px 2.5%; 
+            width: 95%;
+            border: 2px solid #2a8ba7;
+            border-radius: 5px;
+        }
+        .panel{
+            width: 100%;
+            border: none;
+            box-shadow: none;
+        }
+        #p_header{
+            padding: 10px 15px;
+            border-bottom: 1px solid transparent;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px;
+            border-color: #eff2f7;
+            font-size: 16px;
+            font-weight: 300;
+        }
+       tr{
+        width: 100%;
+       }
+       #contant{
+        width: 70%;
+       }
+       td{
+        padding: 10px;
+       }
+       td button,#buttom button{
+        display: block;
+        width: 75px;
+        float: right;
+        margin-right: 20px;
+        border-radius: 4px;
+       }
+       #buttom button{
+        margin:0 5% 5px ;
+       }
+        
+
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
+            .navbar-text.pull-right {
+                float: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+        .pic{
+            width: 50%;
+            height: 100%;
+            text-align: center;
+        }
+
+    </style>
+<body>
+    <div class="title">
+        <font color="#777777"><strong>用户名称：</strong></font>
+        <a href="__APP__/Admin/Message/studenttdetail"><{$Think.session.username}></a>
+    </div>
+    <div class="add">
+        <form action="__URL__/search" id="search" method="post" style="width: 60%; text-align: center; float: left; margin-top: 3px;">
+            <div style="width: 20%; text-align: center; margin-left: 30%; margin-right: 4%; float: left;">
+                <input type="text" style="padding:4px;border:1px solid black;border-radius:3px;" name="search1" />
+            </div>
+            <div style="float: left; margin-left: 3%;">
+                <button type="submit" style="float: right;line-height:17px; margin-top:5px;margin-left: 5%; padding-left: 5%">搜索</button> <br><br>
+            </div>
+            <div style="width: 100%; text-align: center; float: left;">
+                <input type="radio" name="condition" value="1" checked/>所有　
+                <input type="radio" name="condition" value="2"/>设备名称　
+                <input type="radio" name="condition" value="3"/>设备编号　
+            </div>
+        </form><br>
+        <table>
+            <tr><a href="__URL__/add"><button style="line-height:17px;">添加</button></a></tr>
+        </table><br>
+        <div class="clr"></div>
+    </div style="margin-bottom: 5%;">
+    <div class="row">
+        <volist name = "data" id = "vo">
+            <div id="eqp_pic">
+                    <a href="__PUBLIC__/<{$vo.imagicaddress}>" target = "_blank" ><img src="__PUBLIC__<{$vo.imagicaddress}>" class = "pic" alt="无图片" /></a>           
+            </div>
+
+            <div id="eqp_con">
+
+            <table align="left" class="table" border="1px" cellpadding="1px">
+            <div class="panel">
+                <form action="__URL__/do_update" method = "post" enctype="multipart/form-data">
+                    <input type="text" name = "id" value = "<{$vo.id}>" hidden>
+                    <div id='p_body'>
+                        <tr>
+                            <th align="left" colspan="8" class="shang_center_search">
+                                <span>设备基本信息</span>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th align="center" nowrap="nowrap" width="100px">仪器分类</th>
+                            <td width="100px" align="left">
+                                <select name="class">
+                                    <option value= 1 <eq name="vo.class" value="1" > select="selected" </eq> >质谱仪器</option>
+                                    <option value= 2 <eq name="vo.class" value="2" > select="selected" </eq> >色谱仪器</option>
+                                    <option value= 3 <eq name="vo.class" value="3" > select="selected" </eq> >光谱仪器</option>
+                                    <option value= 4 <eq name="vo.class" value="4" > select="selected" </eq> >生化分离分析仪器</option>
+                                    <option value= 5 <eq name="vo.class" value="5" > select="selected" </eq> >显微镜及图像仪</option>
+                                    <option value= 6 <eq name="vo.class" value="6" > select="selected" </eq> >品质分析仪器</option>
+                                    <option value= 7 <eq name="vo.class" value="7" > select="selected" </eq> >其他</option>
+                                </select>
+                            </td>
+                            <th align="center" nowrap="nowrap" width="100px">仪器序号</th>
+                            <td width="140px" align="left"><input type="text" name = "eid"  value = "<{$vo.eid}>"> </td>
+                            <th align="center" nowrap="nowrap" width="100px">资产编号</th>
+                            <td width="140px" align="left"><input type="text" name = "eoutid"  value = "<{$vo.eoutid}>"></td>
+                        </tr>
+                        <tr>
+                            <th align="center" nowrap="nowrap" width="100px">仪器名称</th>
+                            <td width="100px" align="left"><input type="text" name = "ecname"  value = "<{$vo.ecname}>"></td>
+                            <th align="center" nowrap="nowrap" width="100px">仪器图片</th>
+                            <td width="140px" align="left"><input type="file" name = "file" value = "<$vo.imagicaddress>"></td>
+                            <th align="center" nowrap="nowrap" width="100px">仪器型号</th>
+                            <td width="140px" align="left"><input type="text" name = "etype"  value = "<{$vo.etype}>"></td>
+                        </tr>
+                        <tr>
+                            <th align="center" nowrap="nowrap" width="100px">单价</th>
+                            <td width="100px" align="left"><input type="text" name = "eprice"  value = "<{$vo.eprice}>"></td>
+                            <th align="center" nowrap="nowrap" width="100px">现状</th>
+                            <td width="140px" align="left"><input type="text" name = "now"  value = "<{$vo.now}>"></td>
+                            <th align="center" nowrap="nowrap" width="100px">领用单位</th>
+                            <td width="140px" align="left"><input type="text" name = "eblong"  value = "<{$vo.eblong}>"></td>
+                        </tr>
+                        <tr>
+                            <th align="center">存放地</th>
+                            <td colspan="7px" align="center" style="width: 350px;"><input type="text" name = "elocation"  value = "<{$vo.elocation}>" style = "width: 100%"></td>
+                        </tr>
+                        
+                        <tr>
+                            <th align="center">供应商</th>
+                            <td colspan="7px" align="center" style="width: 350px;"><input type="text" name = "ecmanufactor"  value = "<{$vo.ecmanufactor}>" style = "width: 100%"colspan="7px"></td>
+                        </tr>
+                        
+                        <tr>
+                            <th align="center">仪器简介</th>
+                            <td colspan="7px" align="center" style="width: 350px;"><input type="text" name = "introduction"  value = "<{$vo.introduction}>" colspan="7px" style = "width: 100%"></td>
+                        </tr>
+                        <tr>
+                            <th align="left" colspan="8" class="shang_center_search">
+                                <span>设备特点介绍</span>
+                            </th>
+                        </tr>
+
+                        <PHP>
+                            for($k = 0; $k < $vo['count'];$k++){
+                        </PHP>
+                                <tr>
+                                    <th align="center" nowrap="nowrap" width="100px">特　　点
+                                        <PHP>
+                                            echo $k+1;
+                                        </PHP>
+                                    </th>
+                                    <td width="140px" align="left" colspan="4">
+                                        <PHP>
+                                            echo $vo['management'][$k]['title'];
+                                        </PHP>
+                                    </td>
+                                    <td width= "25% " rowspan="2" colspan="8">
+                                        <div style="width: 100%; height: 45%; float: left;">
+                                            <span><button type = "submit" style="margin-right: 30%; margin-bottom: 2%;"><a href="__URL__/updateManagement/id/<?php echo $vo['management'][$k]['id'] ?>">修改</a></button></span>
+                                        </div>
+                                        <div style="width: 100%;height: 45%; float: left;">
+                                            <span><button type = "reset" style="margin-right: 30%; margin-top: 2%;"><a href="__URL__/deleteManagement/id/<?php echo $vo['management'][$k]['equipmentid'] ?>/eid/<?php echo $vo['management'][$k]['id']?>">删除</a></button></span>
+                                        </div>
+                                    </td> 
+                                </tr>
+                                <tr>
+                                    <th align="center" nowrap="nowrap" width="100px">
+                                        <PHP>
+                                            echo $k+1;
+                                        </PHP>
+                                        介　　绍</th>
+                                    <td width="140px" align="left" colspan="4">
+                                        <PHP>
+                                            echo htmlspecialchars_decode($vo['management'][$k]['content']);
+                                        </PHP>
+                                    </td>
+                                </tr>
+                            <PHP>
+                                }
+                            </PHP>
+                    </div>
+                </form>
+            </div>
+        </table>
+
+            </div>
+            <div class="clr"></div>
+            <div id="eqp_option">
+                <table>
+                    <tr><a class="eqp_option_a" href="__URL__/update/id/<{$vo.id}>"><button>修改</button></a></tr> 
+                    <tr><a class="eqp_option_a" href="__URL__/delete/id/<{$vo.id}>"><button>删除</button></a></tr> 
+                    <tr><a class="eqp_option_a" href="__URL__/add_management/id/<{$vo.id}>"><button>添加介绍</button></a></tr> 
+                </table>
+            </div>
+        </volist>
+        <nav style="text-align:center;" >
+           <ul id="pagination">
+            <{$show}>
+           </ul>
+      </nav>
+      <div class="clr"></div>
+    </div>
+</body>
+</html>

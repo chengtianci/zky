@@ -1,0 +1,258 @@
+[ 2017-05-11T15:08:32+08:00 ] ::1 /zky/zky/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.066552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.090142s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\zky\zky\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tp_maincontent` [ RunTime:0.207895s ]
+SQL: SELECT `content` FROM `tp_maincontent` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `tp_link` [ RunTime:0.038828s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 0 )  [ RunTime:0.000549s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 1 )  [ RunTime:0.000314s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 2 )  [ RunTime:0.000317s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 3 )  [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `tp_information` [ RunTime:0.029608s ]
+SQL: SELECT * FROM `tp_information` ORDER BY id desc  [ RunTime:0.010614s ]
+SQL: SHOW COLUMNS FROM `tp_file` [ RunTime:0.058565s ]
+SQL: SELECT * FROM `tp_file` ORDER BY id desc  [ RunTime:0.000598s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000851s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\zky\zky\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.815074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.815434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.041153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.041503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.104813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.105469s ]
+
+[ 2017-05-11T15:08:33+08:00 ] ::1 /zky/zky/index.php/Home/Public/code
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001751s ]
+
+[ 2017-05-11T15:27:36+08:00 ] ::1 /zky/zky/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004556s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\zky\zky\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tp_maincontent` [ RunTime:0.038048s ]
+SQL: SELECT `content` FROM `tp_maincontent` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.027246s ]
+SQL: SHOW COLUMNS FROM `tp_link` [ RunTime:0.023659s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 0 )  [ RunTime:0.000729s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 1 )  [ RunTime:0.000333s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 2 )  [ RunTime:0.000299s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 3 )  [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `tp_information` [ RunTime:0.017016s ]
+SQL: SELECT * FROM `tp_information` ORDER BY id desc  [ RunTime:0.010628s ]
+SQL: SHOW COLUMNS FROM `tp_file` [ RunTime:0.001452s ]
+SQL: SELECT * FROM `tp_file` ORDER BY id desc  [ RunTime:0.000547s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000280s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000617s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\zky\zky\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.544731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.545085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.021407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021754s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.037195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.037580s ]
+
+[ 2017-05-11T15:27:38+08:00 ] ::1 /zky/zky/index.php/Home/Public/code
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001944s ]
+
+[ 2017-05-11T16:22:56+08:00 ] ::1 /zky/zky/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.036390s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\zky\zky\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tp_maincontent` [ RunTime:0.034637s ]
+SQL: SELECT `content` FROM `tp_maincontent` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `tp_link` [ RunTime:0.013418s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 0 )  [ RunTime:0.000690s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 1 )  [ RunTime:0.000572s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 2 )  [ RunTime:0.000310s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 3 )  [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `tp_information` [ RunTime:0.001180s ]
+SQL: SELECT * FROM `tp_information` ORDER BY id desc  [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `tp_file` [ RunTime:0.011534s ]
+SQL: SELECT * FROM `tp_file` ORDER BY id desc  [ RunTime:0.000497s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000281s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000625s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\zky\zky\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.836575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.837084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.067643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.068272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.066170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.066707s ]
+
+[ 2017-05-11T16:22:58+08:00 ] ::1 /zky/zky/index.php/Home/Public/code
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001747s ]
+
+[ 2017-05-11T16:46:34+08:00 ] ::1 /zky/zky/index.php/Home/Inform/news
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002029s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\zky\zky\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tp_information` [ RunTime:0.020901s ]
+SQL: SELECT * FROM `tp_information` ORDER BY id desc  [ RunTime:0.001286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000530s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\zky\zky\Application\Runtime\Cache\Home\a054483b59c6dad8cd579f620efb59e4.php 第 116 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.144087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002833s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002586s ]
+
+[ 2017-05-11T16:46:37+08:00 ] ::1 /zky/zky/index.php/Home/Equipment/equipment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002042s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\zky\zky\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tp_equipment` [ RunTime:0.062867s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_equipment` LIMIT 1   [ RunTime:0.000348s ]
+SQL: SELECT * FROM `tp_equipment` LIMIT 0,9   [ RunTime:0.000763s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001132s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\zky\zky\Application\Runtime\Cache\Home\356e1af77c9db117a44a52331a30d673.php 第 109 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.179352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.179840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008512s ]
+
+[ 2017-05-11T16:46:39+08:00 ] ::1 /zky/zky/index.php/Home/Equipment/equipment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002085s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\zky\zky\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tp_equipment` [ RunTime:0.009774s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_equipment` LIMIT 1   [ RunTime:0.000468s ]
+SQL: SELECT * FROM `tp_equipment` LIMIT 0,9   [ RunTime:0.000708s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000569s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\zky\zky\Application\Runtime\Cache\Home\356e1af77c9db117a44a52331a30d673.php 第 109 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000848s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003696s ]
+
+[ 2017-05-11T16:46:39+08:00 ] ::1 /zky/zky/index.php/Home/Regulation/regulation
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001154s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002163s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\zky\zky\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tp_regulation` [ RunTime:0.072028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_regulation` LIMIT 1   [ RunTime:0.000399s ]
+SQL: SELECT * FROM `tp_regulation` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000575s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000625s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\zky\zky\Application\Runtime\Cache\Home\11b09d2d6d83e696111763d4cdee86c9.php 第 118 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.146301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.146686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000910s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001522s ]
+
+[ 2017-05-11T16:46:41+08:00 ] ::1 /zky/zky/index.php/Home/File/document
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002098s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\zky\zky\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tp_file` [ RunTime:0.088040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_file` LIMIT 1   [ RunTime:0.000391s ]
+SQL: SELECT * FROM `tp_file` ORDER BY id desc LIMIT 0,10   [ RunTime:0.006369s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000524s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\zky\zky\Application\Runtime\Cache\Home\e4387c5e386cd9dbd17b22b1d22fe707.php 第 112 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.124526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001913s ]
+
+[ 2017-05-11T16:46:43+08:00 ] ::1 /zky/zky/index.php/Home/Message/conmunication
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002025s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\zky\zky\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tp_user` [ RunTime:0.029628s ]
+NOTIC: [8] Undefined index: id E:\wamp\www\zky\zky\Application\Home\Controller\MessageController.class.php 第 8 行.
+SQL: SELECT `say` FROM `tp_user` WHERE ( id =   ) LIMIT 1   [ RunTime:0.044882s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `say` FROM `tp_user` WHERE ( id =   ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `tp_message` [ RunTime:0.030909s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_message` LIMIT 1   [ RunTime:0.000638s ]
+SQL: SELECT * FROM `tp_message` ORDER BY id desc LIMIT 0,13   [ RunTime:0.026294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000695s ]
+NOTIC: [8] Undefined index: username E:\wamp\www\zky\zky\Application\Runtime\Cache\Home\afb02c676964e0f94d9da57105704626.php 第 174 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.115735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.116081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000859s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001689s ]
+
+[ 2017-05-11T16:46:44+08:00 ] ::1 /zky/zky/index.php/Home/Public/code
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001836s ]
+

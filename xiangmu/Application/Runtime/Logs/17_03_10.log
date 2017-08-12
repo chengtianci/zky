@@ -1,0 +1,167 @@
+[ 2017-03-10T09:08:34+08:00 ] 218.199.68.251 /zky/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.013311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026883s ]
+SQL: SHOW COLUMNS FROM `tp_maincontent` [ RunTime:0.046174s ]
+SQL: SELECT `content` FROM `tp_maincontent` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.035091s ]
+SQL: SHOW COLUMNS FROM `tp_link` [ RunTime:0.019810s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 0 )  [ RunTime:0.000418s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 1 )  [ RunTime:0.000279s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 2 )  [ RunTime:0.000279s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 3 )  [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `tp_information` [ RunTime:0.017552s ]
+SQL: SELECT * FROM `tp_information` ORDER BY id desc  [ RunTime:0.030421s ]
+SQL: SHOW COLUMNS FROM `tp_file` [ RunTime:0.018816s ]
+SQL: SELECT * FROM `tp_file` ORDER BY id desc  [ RunTime:0.005750s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000681s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.119244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.010926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.044324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.044694s ]
+
+[ 2017-03-10T09:08:35+08:00 ] 218.199.68.251 /zky/index.php/Home/Public/code
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003784s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002955s ]
+
+[ 2017-03-10T09:08:38+08:00 ] 218.199.68.251 /zky/index.php/Home/Equipment/equipment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004420s ]
+SQL: SHOW COLUMNS FROM `tp_equipment` [ RunTime:0.026995s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_equipment` LIMIT 1   [ RunTime:0.000346s ]
+SQL: SELECT * FROM `tp_equipment` LIMIT 0,9   [ RunTime:0.012940s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000612s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\356e1af77c9db117a44a52331a30d673.php 第 109 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.036773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002071s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002613s ]
+
+[ 2017-03-10T09:09:59+08:00 ] 218.199.68.251 /zky/index.php/Home/Equipment/showitems/id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007104s ]
+SQL: SHOW COLUMNS FROM `tp_equipment` [ RunTime:0.003552s ]
+SQL: SELECT * FROM `tp_equipment` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `tp_equipmentmanage` [ RunTime:0.012710s ]
+SQL: SELECT * FROM `tp_equipmentmanage` WHERE ( 1=1 AND equipmentid='1' )  [ RunTime:0.011248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000621s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\7713a7762d994f49641d5c49c5911e5d.php 第 113 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.053595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002912s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002849s ]
+
+[ 2017-03-10T09:11:05+08:00 ] 218.199.68.251 /zky/index.php/Home/Equipment/showitems/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003998s ]
+SQL: SHOW COLUMNS FROM `tp_equipment` [ RunTime:0.003187s ]
+SQL: SELECT * FROM `tp_equipment` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.000427s ]
+SQL: SHOW COLUMNS FROM `tp_equipmentmanage` [ RunTime:0.001854s ]
+SQL: SELECT * FROM `tp_equipmentmanage` WHERE ( 1=1 AND equipmentid='3' )  [ RunTime:0.000354s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000251s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000624s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\7713a7762d994f49641d5c49c5911e5d.php 第 113 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.038274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001938s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002943s ]
+
+[ 2017-03-10T09:11:09+08:00 ] 218.199.68.251 /zky/index.php/Home/Equipment/showitems/id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004375s ]
+SQL: SHOW COLUMNS FROM `tp_equipment` [ RunTime:0.003268s ]
+SQL: SELECT * FROM `tp_equipment` WHERE ( id = 3 ) LIMIT 1   [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `tp_equipmentmanage` [ RunTime:0.001979s ]
+SQL: SELECT * FROM `tp_equipmentmanage` WHERE ( 1=1 AND equipmentid='3' )  [ RunTime:0.000337s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000651s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\7713a7762d994f49641d5c49c5911e5d.php 第 113 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002426s ]
+
+[ 2017-03-10T09:11:19+08:00 ] 218.199.68.251 /zky/index.php/Home/Equipment/showitems/id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004669s ]
+SQL: SHOW COLUMNS FROM `tp_equipment` [ RunTime:0.003241s ]
+SQL: SELECT * FROM `tp_equipment` WHERE ( id = 5 ) LIMIT 1   [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `tp_equipmentmanage` [ RunTime:0.002168s ]
+SQL: SELECT * FROM `tp_equipmentmanage` WHERE ( 1=1 AND equipmentid='5' )  [ RunTime:0.000369s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000261s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000634s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\7713a7762d994f49641d5c49c5911e5d.php 第 113 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.031257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002656s ]
+
+[ 2017-03-10T09:31:42+08:00 ] 218.199.68.251 /zky/index.php/Home/Equipment/equipment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014610s ]
+SQL: SHOW COLUMNS FROM `tp_equipment` [ RunTime:0.003192s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_equipment` LIMIT 1   [ RunTime:0.000281s ]
+SQL: SELECT * FROM `tp_equipment` LIMIT 0,9   [ RunTime:0.000954s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000631s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\356e1af77c9db117a44a52331a30d673.php 第 109 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.051116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002845s ]
+

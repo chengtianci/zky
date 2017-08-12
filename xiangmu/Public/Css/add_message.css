@@ -1,0 +1,23 @@
+#show h2 {
+	text-align: center;
+}
+#content{
+	border: 1px solid black;
+	display: block;
+	height: 200px;
+	width: 90%;
+	margin-left: 5%;
+	border-radius: 3px;
+}
+#show input{
+	margin-left: 25px;
+	height: 30px;
+	width: 60px;
+	margin-top: 10px;
+	border-radius: 1px;
+	box-shadow: 0px 0px 5px #c1c1c1;
+	margin-bottom: 3px;
+}
+#theme{
+	width: 200px !important;
+}

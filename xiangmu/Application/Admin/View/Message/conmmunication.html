@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/public.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/conmmunication.css" />
+
+</head>
+<body>
+    <div class="title"><font color="#777777"><strong>管理员：
+        <a href="__APP__/Admin/Index/studentdetail" id=""><{$Think.session.username}></a>
+    </strong></font></div>
+    <table>
+        
+        <tr>
+            <td>发布留言</td>
+        </tr>
+        <tr>
+            <td>留言主题：<form action="__URL__/do_addmessage" method = "post"></td>
+            <td><input type="text" name = "title"></td>
+        </tr>
+        <tr>
+            <td>详细内容：</td>
+            <td><textarea name="content" id = "content"></textarea></td>
+        </tr>
+        <tr>
+            <div id="buttom" >
+                <td><button type = "submit">发布</button></a></td>
+                <td><button type = "reset">取消</button></form></td>
+            </div>
+        </tr>
+    </table>
+    <table >
+        <div class='panel'>
+            <div id='p_body'>
+                <tr>
+                    <td>留言主题</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <volist name = "data" id = "vo">
+                    <tr>
+                        <td><{$vo.title}></td>
+                        <td><a href="__URL__/do_see/id/<{$vo.id}>"><button>详细信息</button></a></td>
+                        <td> <a href="__URL__/do_delete/id/<{$vo.id}>"><button>删除</button></a></td>
+                    </tr>
+                </volist>
+                <tr>
+                    <td><{$show}></td>
+                </tr>
+            </div>
+        </div>
+    </table>
+</body>
+</html>

@@ -1,0 +1,8 @@
+[ 2017-04-16T12:28:04+08:00 ] ::1 /zky/zky/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.061947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.119540s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp\www\zky\zky\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Access denied for user 'doubibobo'@'localhost' (using password: YES) E:\wamp\www\zky\zky\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+ERR: Access denied for user 'doubibobo'@'localhost' (using password: YES)
+

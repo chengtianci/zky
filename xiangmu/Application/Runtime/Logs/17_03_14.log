@@ -1,0 +1,234 @@
+[ 2017-03-14T19:33:41+08:00 ] 218.199.68.251 /zky/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.028484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.047988s ]
+SQL: SHOW COLUMNS FROM `tp_maincontent` [ RunTime:0.034001s ]
+SQL: SELECT `content` FROM `tp_maincontent` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.010260s ]
+SQL: SHOW COLUMNS FROM `tp_link` [ RunTime:0.009947s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 0 )  [ RunTime:0.000740s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 1 )  [ RunTime:0.000317s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 2 )  [ RunTime:0.000282s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 3 )  [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `tp_information` [ RunTime:0.024915s ]
+SQL: SELECT * FROM `tp_information` ORDER BY id desc  [ RunTime:0.031758s ]
+SQL: SHOW COLUMNS FROM `tp_file` [ RunTime:0.016207s ]
+SQL: SELECT * FROM `tp_file` ORDER BY id desc  [ RunTime:0.008043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000738s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.111893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.025949s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.013361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013751s ]
+
+[ 2017-03-14T19:33:46+08:00 ] 218.199.68.251 /zky/index.php/Home/Public/code
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001361s ]
+
+[ 2017-03-14T19:33:51+08:00 ] 218.199.68.251 /zky/index.php/Home/Equipment/equipment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001873s ]
+SQL: SHOW COLUMNS FROM `tp_equipment` [ RunTime:0.017782s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_equipment` LIMIT 1   [ RunTime:0.000307s ]
+SQL: SELECT * FROM `tp_equipment` LIMIT 0,9   [ RunTime:0.012039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000635s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\356e1af77c9db117a44a52331a30d673.php 第 109 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.048685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002526s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001570s ]
+
+[ 2017-03-14T19:33:53+08:00 ] 218.199.68.251 /zky/index.php/Home/Regulation/regulation
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002042s ]
+SQL: SHOW COLUMNS FROM `tp_regulation` [ RunTime:0.095487s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_regulation` LIMIT 1   [ RunTime:0.000321s ]
+SQL: SELECT * FROM `tp_regulation` ORDER BY id LIMIT 0,20   [ RunTime:0.030553s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000650s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\11b09d2d6d83e696111763d4cdee86c9.php 第 118 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2017-03-14T19:33:57+08:00 ] 218.199.68.251 /zky/index.php/Home/Inform/news
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001846s ]
+SQL: SHOW COLUMNS FROM `tp_information` [ RunTime:0.005041s ]
+SQL: SELECT * FROM `tp_information` ORDER BY id desc  [ RunTime:0.004754s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000586s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\a054483b59c6dad8cd579f620efb59e4.php 第 116 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.035222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035571s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002010s ]
+
+[ 2017-03-14T19:34:00+08:00 ] 218.199.68.251 /zky/index.php/Home/Inform/news
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001892s ]
+SQL: SHOW COLUMNS FROM `tp_information` [ RunTime:0.002821s ]
+SQL: SELECT * FROM `tp_information` ORDER BY id desc  [ RunTime:0.000554s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000324s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000881s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\a054483b59c6dad8cd579f620efb59e4.php 第 116 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002215s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002575s ]
+
+[ 2017-03-14T19:34:01+08:00 ] 218.199.68.251 /zky/index.php/Home/Index/main
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005020s ]
+SQL: SHOW COLUMNS FROM `tp_maincontent` [ RunTime:0.004693s ]
+SQL: SELECT `content` FROM `tp_maincontent` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.003825s ]
+SQL: SHOW COLUMNS FROM `tp_link` [ RunTime:0.003770s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 0 )  [ RunTime:0.000385s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 1 )  [ RunTime:0.000293s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 2 )  [ RunTime:0.000289s ]
+SQL: SELECT * FROM `tp_link` WHERE ( class = 3 )  [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `tp_information` [ RunTime:0.001933s ]
+SQL: SELECT * FROM `tp_information` ORDER BY id desc  [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `tp_file` [ RunTime:0.003518s ]
+SQL: SELECT * FROM `tp_file` ORDER BY id desc  [ RunTime:0.001427s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000281s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000656s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\4462707c48390994935bf3e366c221aa.php 第 188 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.069413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002401s ]
+
+[ 2017-03-14T19:34:02+08:00 ] 218.199.68.251 /zky/index.php/Home/Regulation/regulation
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004468s ]
+SQL: SHOW COLUMNS FROM `tp_regulation` [ RunTime:0.003194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_regulation` LIMIT 1   [ RunTime:0.000289s ]
+SQL: SELECT * FROM `tp_regulation` ORDER BY id LIMIT 0,20   [ RunTime:0.000364s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000597s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\11b09d2d6d83e696111763d4cdee86c9.php 第 118 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2017-03-14T19:34:06+08:00 ] 218.199.68.251 /zky/index.php/Home/Equipment/equipment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004368s ]
+SQL: SHOW COLUMNS FROM `tp_equipment` [ RunTime:0.003108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_equipment` LIMIT 1   [ RunTime:0.000267s ]
+SQL: SELECT * FROM `tp_equipment` LIMIT 0,9   [ RunTime:0.000406s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000683s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\356e1af77c9db117a44a52331a30d673.php 第 109 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001111s ]
+
+[ 2017-03-14T19:34:11+08:00 ] 218.199.68.251 /zky/index.php/Home/Equipment/showclass/id/4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001992s ]
+SQL: SHOW COLUMNS FROM `tp_class` [ RunTime:0.018728s ]
+SQL: SELECT `name` FROM `tp_class` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `tp_equipment` [ RunTime:0.002693s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_equipment` LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT * FROM `tp_equipment` WHERE ( class = 4 ) LIMIT 0,9   [ RunTime:0.000446s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000250s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000636s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\710ade9c3dcd0530e405187f00d2edc1.php 第 113 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001341s ]
+
+[ 2017-03-14T19:34:23+08:00 ] 218.199.68.251 /zky/index.php/Home/Equipment/search
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001807s ]
+SQL: SHOW COLUMNS FROM `tp_equipment` [ RunTime:0.003229s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tp_equipment` WHERE ( `ecname` LIKE '%%' ) OR ( `eid` = 0 ) LIMIT 1   [ RunTime:0.000485s ]
+SQL: SELECT * FROM `tp_equipment` WHERE ( `ecname` LIKE '%%' ) OR ( `eid` = 0 )  [ RunTime:0.000863s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000225s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000593s ]
+NOTIC: [8] Undefined index: username C:\wamp\www\zky\Application\Runtime\Cache\Home\e789e01f33767cc3b29593017b154b05.php 第 113 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001347s ]
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/public.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/equipment.css" />
+</head>
+<body>
+    <div class="title">
+        <font color="#777777"><strong>用户名称：</strong></font>
+        <a href="__APP__/Admin/Message/studenttdetail"><{$Think.session.username}></a>
+    </div>
+    <div>共有<{$count}>个仪器</div>
+    <volist name = "data" id = "vo">
+    <div class="row" style="min-height: 400px;">
+            <div id="eqp_pic" >
+                    <a id="eqp_pic_a" href="__PUBLIC__/<{$vo.imagicaddress}>" target = "_blank" ><img src="__PUBLIC__<{$vo.imagicaddress}>" class = "pic" alt="无图片" /></a>           
+            </div>
+
+            <div id="eqp_con">
+                <table  id="eqp_con_tab">
+                            <tr>
+                                <th   style="width: 250px;" colspan="3">
+                                    <span>设备基本信息</span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th   >仪器编号</th>
+                                <td  ><{$vo.eid}></td>
+                                <th  >资产编号</th>
+                                <td  ><{$vo.eoutid}></td>
+                                <th  >名　　称</th>
+                                <td  ><{$vo.ecname}></td>
+                            </tr>
+                            <tr>
+                                <th   >型　　号</th>
+                                <td  ><{$vo.etype}></td>
+                                <th  >单　　价</th>
+                                <td  ><{$vo.eprice}></td>
+                                <th  >现　　状</th>
+                                <td  ><{$vo.now}></td>
+                            </tr>
+
+                            <tr>
+                                <th   >领用单位</td>
+                                <td  ><{$vo.eblong}></td>
+                                <th  >存放地</td>
+                                <td  ><{$vo.elocation}></td>
+                                <th  >供应商</td>
+                                <td  ><{$vo.ecmanufactor}></td>
+                            </tr>
+                           
+                            <tr>
+                                <th >仪器简介</td>
+                                <td  ><{$vo.introduction}></td>
+                            </tr>
+                            <PHP>
+                                for($k = 0; $k < $vo['count'];$k++){
+                            </PHP>
+                                <tr>
+                                    <th >特　　点
+                                    <!--     <PHP>
+                                            echo $k+1;
+                                        </PHP> -->
+                                    </th>
+                                    <td  >
+                                        <PHP>
+                                            echo $vo['management'][$k]['title'];
+                                        </PHP>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th >
+<!--                                         <PHP>
+                                            echo $k+1;
+                                        </PHP> -->
+                                        介　　绍</th>
+                                    <td  >
+                                        <PHP>
+                                            echo htmlspecialchars_decode($vo['management'][$k]['content']);
+                                        </PHP>
+                                    </td>
+                                </tr>
+                            <PHP>
+                                }
+                            </PHP>
+                </table>
+            </div>
+            <div class="clr"></div>
+            <div id="eqp_option">
+                    <a class="eqp_option_a" href="__URL__/update/id/<{$vo.id}>"><button>修改</button></a> 
+                    <a class="eqp_option_a" href="__URL__/delete/id/<{$vo.id}>"><button>删除</button></a> 
+                    <a class="eqp_option_a" href="__URL__/add_management/id/<{$vo.id}>"><button>添加介绍</button></a> 
+            </div>
+            <div class="clr"></div>
+        </div>
+        </volist>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>新闻</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/public.css" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Css/news.css" />
+</head>
+<body>
+    <div class="contant">
+        <div class="title">
+                <font color="#777777"><strong>用户名称：</strong></font>
+                <a href="__APP__/Admin/Index/studentdetail"><{$Think.session.username}></a>
+        </div>
+        <div class="row">
+                <table class="table">
+                    <tr>
+                        <td>
+                            <a href="__URL__/add"><button>写通知</button></a>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        <div class="row">
+            <table class="table">
+                <volist name = "data" id = "vo">
+        		    <tr>
+                        <td>
+                            <a href="__URL__/showitems/id/<{$vo.id}>"> <{$vo.title}>  <{$vo.date}></a>
+                        </td>
+        		        <th>
+			                <button><a href="__URL__/update/id/<{$vo.id}>">修改</a></button> 
+                            <button><a href="__URL__/do_delete/id/<{$vo.id}>">删除</a></button>
+                        </th>
+                    </tr>
+                </volist>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

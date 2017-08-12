@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+li {
+    list-style: none;
+}
+img {
+    border: 0;
+}
+a {
+    text-decoration: none;
+}
+#sl_na{
+    height: 60px;
+    width: 100%;
+    background:;
+    margin-top: 3px;
+    border-bottom:1px solid #0f941a;
+}
+#inclu{
+    margin: 0 auto;
+    width: 890px;
+
+}
+#inclu a:link,#inclu a:hover,#inclu a:visited{
+    margin-right: 5px;
+    margin-top: 3px;
+    display: block;
+    width: 80px;
+    height: 55px;
+    color: #333;
+    font-size: 13px;
+    cursor:pointer;
+    float: left;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 3px;
+
+}
+#inclu a:hover{
+    color: #f2f2f2;
+    background: #0f941a;
+    filter:alpha(opacity=80);  
+    -moz-opacity:0.8;  
+    -khtml-opacity: 0.8;  
+    opacity: 0.8; 
+    font-family: "SimSun",Arial,sans-serif;
+    font-weight: bold;
+}
+#inclu a p{
+    margin-top: 10px; 
+    height: 15px;
+}
+#search{
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    float: right;
+}
+#eqlist{
+    min-height:810px;
+    margin-top: 5px;
+    box-shadow: 0px 0px 5px #c1c1c1;
+    background: #FAFAFB;
+    padding-bottom: 40px;
+}
+#search input {
+    border: 1px solid #000;
+}
+#eqlist .eqsl{
+    height: 200px;
+    width: 295px;
+    margin-top: 25px;
+    margin-left: 17px;
+    float: left;
+    border-radius: 3px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-overflow :ellipsis;
+     background: #Fff;
+    border-top: 3px solid green;
+
+}
+
+td a:link,td a:hover,td a:visited{
+    height: 16px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    width: 200px;
+    color: #65666D;
+    border-bottom: 1px dashed #eaeaea;
+    margin-top: 10px;
+    display: inline-block;
+    text-indent: 25px;
+    margin-bottom: 13px;
+    background: url(../Pic/arrow.png) no-repeat 0 0;
+    background-size: 18px 18px;
+}
+td a:hover{
+    text-decoration:underline;
+    color: #c7580d;
+    background: url(../Pic/arrow1.png) no-repeat 0 0;
+    background-size: 18px 18px;
+} 
+#shower{
+}
+#shower img{
+    display: inline-block;
+    width: 148px;
+    height: 120px;
+    margin-left: 3px;
+    margin-right: 2px;
+}
+.equRig{
+    width:130px;
+    height: 120px;
+    overflow: hidden;
+    float: right;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.equRig .con{
+    font-size: 11px;
+}
+
+.equRig .titl{
+    font-size: 12px;
+}
+
+.condes{
+    display: block;
+    width: 100%;
+    height: 25px;
+    font-size: 12px;
+    text-indent: 5px;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#total{
+    width: 90%;
+    height: 15px;
+    margin-top: 10px
+    margin-right: 50px;
+    text-align:right;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
